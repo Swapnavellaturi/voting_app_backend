@@ -21,4 +21,6 @@ source venv/bin/activate
 pip install Flask psycopg2-binary flask-cors
 
 # Run the Flask application
+export FLASK_APP=voting_backend.py
+export FLASK_ENV=development
 flask run --host=0.0.0.0 --port=5000
